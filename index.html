@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Личная страница с информацией о ФИО, образовании и увлечениях.">
+    <meta name="keywords" content="ФИО, образование, увлечения, контакты, социальные сети">
+    <!-- Фавикон (критерий) -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Внешний CSS (1 способ объявления стилей - критерий) -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Внутренний CSS (2 способ объявления стилей - критерий) -->
+    <style>
+        /* Стили для body (селектор по тегу - критерий) */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Стили для класса .header (селектор по классу - критерий) */
+        .header {
+            background-color: #e91e63;
+            color: white;
+        }
+    </style>
+    <title>Главная страница</title>
+</head>
+<body>
+    <!-- Шапка сайта с flexbox (критерий) -->
+    <header class="header">
+        <div class="logo">Мой сайт</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="interests.html">Увлечения</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="main-content">
+            <h1 class="page-title">Личная информация</h1>
+
+            <!-- Анимированный блок (критерий анимации) -->
+            <div class="animated-info">
+                <h2>Авдеева Виктория Алексеевна</h2>
+                <p>Привет, это моя личная страница!</p>
+            </div>
+
+            <!-- Инлайн стили (3 способ объявления CSS - критерий) -->
+            <div class="profile-section" style="background-color: #fce4ec; padding: 15px; border-radius: 10px;">
+                <h2 style="color: #e91e63; text-align: center;">Основные данные</h2>
+                <img src="images/photo.jpg" alt="Моя фотография" class="profile-photo" style="width: 150px; height: 150px;">
+                <p><strong>Направление подготовки:</strong> Прикладная информатика</p>
+                <p><strong>Профиль:</strong> Бизнес информатика</p>
+                <p><strong>Дата рождения:</strong> 4 апреля 2007 года</p>
+            </div>
+
+            <div class="education-section">
+                <h2>Образование</h2>
+                <p><strong>Университет:</strong> МГТУ им. Носова</p>
+                <p><strong>Город рождения:</strong> Магнитогорск</p>
+            </div>
+
+            <div class="contact-section">
+                <h2>Контактная информация</h2>
+                <p><strong>Телефон:</strong> +79124054170</p>
+                <p><strong>Адрес почтового ящика:</strong> viktoriya.avdeeva.040407@gmail.com</p>
+            </div>
+
+            <!-- Флекс-контейнер (1 из 2 требуемых - критерий) -->
+            <div class="social-section">
+                <h2>Социальные сети</h2>
+                <div class="social-links flex-container">
+                    <a href="https://vk.com/wvvishenka" class="social-link">VK</a>
+                    <a href="https://www.tiktok.com/@_wvvish_?_t=ZS-8u471vlQSOI&_r=1" class="social-link">TikTok</a>
+                    <a href="https://www.instagram.com/wvvish_?igsh=bGtwZm15aHVlcmE%3D&utm_source=qr" class="social-link">Instagram</a>
+                </div>
+            </div>
+            
+            <!-- Второй флекс-контейнер (2 из 2 требуемых - критерий) -->
+            <div class="quote-container flex-container">
+                <blockquote class="quote">
+                    "Двигаться вперёд — значит каждый день учиться чему-то новому."
+                </blockquote>
+            </div>
+        </section>
+
+    <!-- Подвал сайта (критерий) -->
+    <footer class="footer">
+        <p>&copy; 2024 Авдеева Виктория Алексеевна. Все права защищены.</p>
+    </footer>
+</body>
+</html>

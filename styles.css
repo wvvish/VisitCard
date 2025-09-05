@@ -1,0 +1,217 @@
+/* Внешний CSS файл (1 способ объявления стилей - критерий) */
+
+/* Стили для body (селектор по тегу - критерий) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f0f5;
+    color: #4a4a4a;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Стили для шапки с flexbox (критерий) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e91e63;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для меню (критерий стилей для меню) */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для ссылок в меню (селектор потомков - критерий) */
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Псевдокласс :hover (дополнительный селектор) */
+.menu a:hover {
+    color: #ffccd5;
+}
+
+/* Стили для основного контента (критерий разметки) */
+.content {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+/* Стили для таблицы (критерий стилей для таблицы) */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для ячеек таблицы (селектор по тегу - критерий) */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Стили для заголовков таблицы (селектор по тегу - критерий) */
+th {
+    background-color: #e91e63;
+    color: white;
+}
+
+/* Стили для четных строк таблицы (псевдокласс - дополнительный селектор) */
+tr:nth-child(even) {
+    background-color: #fde8ef;
+}
+
+/* Стили для списков (критерий стилей для списков) */
+ul, ol {
+    padding-left: 25px;
+}
+
+/* Стили для элементов списка (селектор потомков - критерий) */
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+/* Стили для формы (критерий стилей для элементов формы) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для элементов формы (селектор по тегу - критерий) */
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Стили для кнопки (селектор по тегу - критерий) */
+button {
+    padding: 12px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Стили для подвала (критерий разметки) */
+.footer {
+    background-color: #e91e63;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Флекс-контейнер (1 из 2 - критерий) */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Флекс-элементы (критерий) */
+.flex-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+.quote-container {
+    display: flex;
+    justify-content: center; /* Выравнивание по центру */
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f0f5;
+    border-left: 4px solid #e91e63; /* Акцентная полоса */
+    margin: 30px 0;
+}
+
+.quote {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #333;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Анимация (критерий) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Применение анимации (критерий) */
+.animated-info {
+    animation: fadeIn 2s ease-out;
+}
+
+/* Кнопка "Наверх" (критерий) */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Стили для кнопки при наведении */
+#back-to-top:hover {
+    background-color: #c2185b;
+}
+
+/* Стили для изображения по атрибуту (селектор по атрибуту - критерий) */
+img[alt="Моя фотография"] {
+    border: 3px solid #e91e63;
+}
+
+/* Стили для идентификатора (селектор по id - критерий) */
+#email {
+    background-color: #f5f5f5;
+}

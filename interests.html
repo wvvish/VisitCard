@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница о моих увлечениях, интересах и достижениях.">
+    <meta name="keywords" content="увлечения, хобби, музыка, фильмы, интересы, достижения">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Мои Увлечения</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Мой сайт</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="interests.html">Увлечения</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1>Авдеева Виктория Алексеевна</h1>
+        <h2>Мои увлечения</h2>
+
+        <h3>Достижения и хобби</h3>
+        <ul>
+            <li>Участие в олимпиадах по английскому языку</li>
+            <li>Программирование</li>
+            <li>Маникюр</li>
+        </ul>
+
+        <h3>Мои привычки</h3>
+        <ol>
+            <li>Занятие спортом</li>
+            <li>Просмотр сериалов</li>
+            <li>Прослушивание музыки во время прогулки</li>
+        </ol>
+
+        <h3>Мои любимые жанры:</h3>
+        <ol>
+            <li>Военные фильмы</li>
+            <li>Мелодрама</li>
+            <li>Комедия</li>
+        </ol>
+
+        <h3>Любимый сериал:</h3>
+        <p>Ниже вы можете увидеть один из моих любимых сериалов:</p>
+        <a href="https://bolshoe.tv/promo/web/movie/25435/606941/?segment=zhyki&package_id=5400&utm_campaign=109045058&utm_medium=yandex_web&utm_source=YandexDirect&utm_term=жуки%20сезон&ad_id=15994555931&gbid=5426031206&click_id=6167205967761244159&mt_campaign=109045058&mt_sub1=ТГО%20WEB.%20Жуки%20PREMIER.%20Смотреть%20DESKTOP&mt_sub4=none&regid=6167205967761244159&logid=6167205967761244159&mt_adset=5426031206&mt_creative=15994555931&mt_network=search&yclid=6167205967761244159" target="_blank">Посмотреть сериал "Жуки"</a>
+        <h3>Любимый фильм: <strong>1+1</strong></h3>
+        <video width="560" height="315" controls>
+            <source src="images/video.mp4" type="video/mp4">
+        </video>
+
+        <h3>Любимая музыка:</h3>
+        <table>
+            <tr>
+                <th>Исполнитель</th>
+                <th>Жанр</th>
+                <th>Песни</th>
+            </tr>
+            <tr>
+                <td>N1NT3NDO</td>
+                <td>Рэп</td>
+                <td>ЧП</td>
+            </tr>
+            <tr>
+                <td>Face2Face</td>
+                <td>Рэп</td>
+                <td>В объятиях ночи</td>
+            </tr>
+            <tr>
+                <td colspan="2">Популярные песни</td>
+                <td>
+                    <ul>
+                        <li>Город 312 - Фонари</li>
+                        <li>Топит - Анна Асти</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <h3>Аудиотрек</h3>
+        <audio controls>
+            <source src="images/pesnya.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Кнопка "Наверх" -->
+       <button id="back-to-top" onclick="scrollToTop()">Наверх</button>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Авдеева Виктория Алексеевна. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
